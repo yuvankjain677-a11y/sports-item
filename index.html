@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPORTIFY — Premium Sports Equipment Built For Champions</title>
+  <meta name="description" content="Shop international match-grade sports equipment, apparel and gear at SPORTIFY. Football, Cricket, Badminton, Tennis, Basketball, and Gym Equipment designed for athletes.">
+  <meta name="keywords" content="sports equipment, cricket bats, football, tennis rackets, badminton gear, athletic shoes, gym equipment, sportify">
+  <meta name="theme-color" content="#0b0f19">
+
+  <!-- Favicon icon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300ff7f'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BAR
+       ========================================================================== -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-ticker">
+        <span class="ticker-badge">Flash Sale</span>
+        <span>🔥 Use code <strong style="color:var(--accent-green);">SPORTIFY45</strong> for 45% OFF | Free Express Delivery across India on orders above ₹1,999</span>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          <span>Support: 1800-SPORTIFY</span>
+        </div>
+        <div class="top-bar-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span>India (₹ INR)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" data-route="home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">SPORT<span>IFY</span></span>
+          <span class="brand-sub">CHAMPION GEAR</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <a class="nav-link active" data-route="home">Home</a>
+        <a class="nav-link" data-route="shop">Shop</a>
+        <a class="nav-link" data-route="shop" data-category="all">Categories</a>
+        <a class="nav-link" data-route="shop" data-category="cricket">Cricket</a>
+        <a class="nav-link" data-route="shop" data-category="football">Football</a>
+        <a class="nav-link deal-link" data-route="home" onclick="document.getElementById('flash-sale-section')?.scrollIntoView({behavior:'smooth'});">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+          </svg>
+          Deals
+        </a>
+        <a class="nav-link" data-route="about">About</a>
+        <a class="nav-link" data-route="contact">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Search Button -->
+        <button class="nav-icon-btn" id="nav-search-btn" aria-label="Search Catalog" title="Search (Ctrl+K)">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button class="nav-icon-btn" id="nav-wishlist-btn" aria-label="Saved Wishlist" title="Wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="nav-badge orange" id="wishlist-count-badge" style="display:none;">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="nav-icon-btn" id="nav-cart-btn" aria-label="Shopping Cart" title="Shopping Bag">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="nav-badge" id="cart-count-badge" style="display:none;">0</span>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       VIEW: HOME PAGE
+       ========================================================================== -->
+  <main id="view-home" class="view-section active">
+    <!-- 1. Hero Section -->
+    <section class="hero-section">
+      <div class="hero-bg">
+        <img class="hero-img" src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=1920&q=80" alt="Sportify Champion Athletes" />
+        <div class="hero-overlay"></div>
+        <div class="hero-radial-glow"></div>
+        <div class="hero-radial-glow-2"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          <span class="pill-text">Official Pro Equipment • 2026 Championship Edition</span>
+        </div>
+        <h1 class="hero-headline">
+          PLAY HARD.<br />
+          <span class="highlight-green">PLAY BETTER.</span>
+        </h1>
+        <p class="hero-subheading">
+          Premium sports equipment built for champions. Hand-crafted cricket bats, FIFA-grade footballs, aerospace graphite rackets, and elite athlete gear designed to elevate your game.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" data-route="shop">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            Shop Now
+          </a>
+          <a class="btn btn-outline btn-lg" data-route="shop" data-category="all">
+            Explore Collection
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">50,000<span>+</span></span>
+            <span class="hero-stat-label">Athletes Equipped</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">99.8<span>%</span></span>
+            <span class="hero-stat-label">Match Durability</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">100<span>+</span></span>
+            <span class="hero-stat-label">Pro Grade Lines</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-number">4.9<span>★</span></span>
+            <span class="hero-stat-label">Verified Ratings</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Trust Badges -->
+    <section class="trust-badges-section">
+      <div class="container trust-badges-grid">
+        <div class="trust-badge-card">
+          <div class="trust-badge-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div class="trust-badge-info">
+            <h4>100% Genuine Gear</h4>
+            <p>Direct from verified pro manufacturers</p>
+          </div>
+        </div>
+        <div class="trust-badge-card">
+          <div class="trust-badge-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="trust-badge-info">
+            <h4>Fast & Free Delivery</h4>
+            <p>Across India on orders over ₹1,999</p>
+          </div>
+        </div>
+        <div class="trust-badge-card">
+          <div class="trust-badge-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <polyline points="23 20 23 14 17 14"></polyline>
+              <path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"></path>
+            </svg>
+          </div>
+          <div class="trust-badge-info">
+            <h4>30-Day Easy Returns</h4>
+            <p>Zero-hassle instant return pickups</p>
+          </div>
+        </div>
+        <div class="trust-badge-card">
+          <div class="trust-badge-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <div class="trust-badge-info">
+            <h4>Secure 256-Bit UPI</h4>
+            <p>Cards, Net Banking & COD protection</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Flash Sale Section with Countdown Timer -->
+    <section class="section flash-sale-section" id="flash-sale-section">
+      <div class="container">
+        <div class="section-header flash-sale-header" style="align-items: center;">
+          <div>
+            <div class="flash-sale-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+              Lightning Deals
+            </div>
+            <h2 class="section-title" style="margin-top: 10px;">FLASH SALE — UP TO 48% OFF</h2>
+            <p class="section-desc">Limited stock tournament-grade gear on massive promotional discount. Don't miss out!</p>
+          </div>
+          <!-- Live Countdown Timer -->
+          <div class="countdown-timer">
+            <div class="timer-unit">
+              <span class="timer-val" id="timer-hours">12</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <span class="timer-colon">:</span>
+            <div class="timer-unit">
+              <span class="timer-val" id="timer-minutes">44</span>
+              <span class="timer-label">Mins</span>
+            </div>
+            <span class="timer-colon">:</span>
+            <div class="timer-unit">
+              <span class="timer-val" id="timer-seconds">20</span>
+              <span class="timer-label">Secs</span>
+            </div>
+          </div>
+        </div>
+        <div class="products-grid" id="flash-sale-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Featured Categories -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">Explore Disciplines</span>
+            <h2 class="section-title">FEATURED CATEGORIES</h2>
+            <p class="section-desc">Gear up by sport. Precision-built apparel and gear for peak competition.</p>
+          </div>
+          <a class="btn btn-outline btn-sm" data-route="shop" data-category="all">View All Disciplines &rarr;</a>
+        </div>
+        <div class="category-grid" id="featured-categories-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Best-Selling Products Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">Athlete Favorites</span>
+            <h2 class="section-title">BEST-SELLING GEAR</h2>
+            <p class="section-desc">The most trusted match balls, willow bats, court shoes, and carbon rackets.</p>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <button class="btn btn-outline btn-sm bestseller-tab-btn active" data-tab-cat="all">All</button>
+            <button class="btn btn-outline btn-sm bestseller-tab-btn" data-tab-cat="cricket">Cricket</button>
+            <button class="btn btn-outline btn-sm bestseller-tab-btn" data-tab-cat="football">Football</button>
+            <button class="btn btn-outline btn-sm bestseller-tab-btn" data-tab-cat="badminton">Badminton</button>
+            <button class="btn btn-outline btn-sm bestseller-tab-btn" data-tab-cat="shoes">Shoes</button>
+          </div>
+        </div>
+        <div class="products-grid" id="bestsellers-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Special Promotional Discount Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="promo-banner">
+          <div class="promo-banner-glow"></div>
+          <div class="promo-grid">
+            <div>
+              <span class="section-tag orange">Championship Season Special</span>
+              <h2 class="promo-title">
+                GEAR UP LIKE A PRO.<br />
+                GET <span>45% OFF</span> YOUR NEXT ORDER.
+              </h2>
+              <p style="color: #cbd5e1; font-size: 1.05rem; max-width: 540px;">
+                Equip your squad with elite tournament kit. Apply our exclusive pro coupon code at checkout for immediate 45% discount on all orders above ₹1,999.
+              </p>
+              <div class="promo-coupon-box">
+                <div>
+                  <div style="font-size: 0.72rem; color: var(--text-dim); text-transform: uppercase; font-weight: 700;">Coupon Code</div>
+                  <div class="coupon-code-text">SPORTIFY45</div>
+                </div>
+                <button class="copy-coupon-btn" id="copy-coupon-btn">Copy Code</button>
+              </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Special Promo Shoe" style="max-height: 280px; object-fit: contain; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.8)); transform: rotate(-12deg);" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Trending Products Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag orange">Hot In Arena</span>
+            <h2 class="section-title">TRENDING NOW</h2>
+            <p class="section-desc">Gear seeing massive surge in competitive demand this season.</p>
+          </div>
+          <a class="btn btn-outline btn-sm" data-route="shop">Explore All Trending &rarr;</a>
+        </div>
+        <div class="products-grid" id="trending-products-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. New Arrivals Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">Just Landed</span>
+            <h2 class="section-title">NEW ARRIVALS</h2>
+            <p class="section-desc">Next-generation engineered materials and aerodynamic frame releases.</p>
+          </div>
+          <a class="btn btn-outline btn-sm" data-route="shop">Browse New Lineup &rarr;</a>
+        </div>
+        <div class="products-grid" id="new-arrivals-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Customer Reviews & Verified Testimonials -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header" style="text-align: center; max-width: 680px; margin: 0 auto 50px;">
+          <span class="section-tag">Tested By Champions</span>
+          <h2 class="section-title">WHAT ATHLETES ARE SAYING</h2>
+          <p class="section-desc">Real tournament feedback from certified state, university, and club players.</p>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "The TitanStroke English Willow bat picked up like a feather. The balance and ping on the sweet spot is comparable to ₹40k+ imported custom bats. Scored back-to-back 50s in state qualifiers!"
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">KS</div>
+              <div class="author-info">
+                <h5>Kavya Subramaniam <span class="verified-badge">✓ Verified Buyer</span></h5>
+                <span>State Under-23 Cricket Captain</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "The AerowStrike Pro match football held true flight in heavy Bengaluru rains. Zero water saturation and exceptional rebound off the boot. Our academy switched entirely to Sportify balls."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">RD</div>
+              <div class="author-info">
+                <h5>Rohan Dasgupta <span class="verified-badge">✓ Verified Buyer</span></h5>
+                <span>Head Coach, FC Strikers Academy</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "I strung the AeroForce Nanocarbon racket at 28 lbs and the head-heavy acoustic smash sound echoes through the indoor hall. Incredibly solid frame with zero flex distortion."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">AP</div>
+              <div class="author-info">
+                <h5>Ananya Patel <span class="verified-badge">✓ Verified Buyer</span></h5>
+                <span>National Badminton Ranked Player</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Recently Viewed Section (Dynamically Loaded) -->
+    <section class="section" id="recently-viewed-section" style="display: none;">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">Your History</span>
+            <h2 class="section-title">RECENTLY VIEWED</h2>
+            <p class="section-desc">Pick up right where you left off in your gear evaluation.</p>
+          </div>
+        </div>
+        <div class="products-grid" id="recently-viewed-grid">
+          <!-- Populated by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Newsletter Subscription -->
+    <section class="section" style="padding-bottom: 0;">
+      <div class="container">
+        <div class="newsletter-box">
+          <div class="newsletter-info">
+            <span class="section-tag">Join The Inner Circle</span>
+            <h3>UNLOCK 15% OFF YOUR FIRST ORDER</h3>
+            <p>Get early access to limited edition drops, pro athlete training tips, and member-only flash sales.</p>
+          </div>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Enter your athlete email..." required />
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: SHOP / MARKETPLACE
+       ========================================================================== -->
+  <main id="view-shop" class="view-section">
+    <div class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <!-- Breadcrumb -->
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 24px;">
+        <a data-route="home" style="color:var(--text-muted); cursor:pointer;">Home</a> &nbsp;/&nbsp;
+        <span style="color:var(--accent-green); font-weight: 700;">Sports Marketplace</span>
+      </div>
+
+      <div class="shop-layout">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar" id="filter-sidebar">
+          <div class="filter-header">
+            <h3>Filters</h3>
+            <button class="clear-filters-btn" id="clear-filters-btn">Clear All</button>
+          </div>
+
+          <div class="filter-sidebar-body">
+            <!-- Category Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Category</div>
+              <div class="filter-category-list" id="shop-filter-categories">
+                <!-- Populated dynamically -->
+              </div>
+            </div>
+
+            <!-- Price Range Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Max Price</div>
+              <div class="price-slider-container">
+                <input type="range" class="price-slider" id="price-slider" min="500" max="30000" step="500" value="30000" />
+                <div class="price-range-inputs">
+                  <span>₹500</span>
+                  <span class="val" id="price-slider-val">₹30,000</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Brand</div>
+              <div class="filter-checkbox-list">
+                <label class="checkbox-label">
+                  <input type="checkbox" class="brand-filter-checkbox" value="Sportify Pro" />
+                  <span>Sportify Pro</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="brand-filter-checkbox" value="TitanForce" />
+                  <span>TitanForce</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="brand-filter-checkbox" value="AeroStrike" />
+                  <span>AeroStrike</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="brand-filter-checkbox" value="Apex" />
+                  <span>Apex</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" class="brand-filter-checkbox" value="Vortex" />
+                  <span>Vortex</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Rating Filter -->
+            <div class="filter-group">
+              <div class="filter-group-title">Customer Rating</div>
+              <div class="filter-checkbox-list">
+                <label class="checkbox-label">
+                  <input type="radio" name="shop-rating" class="rating-filter-radio" value="4.8" />
+                  <span>4.8★ & Above</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="shop-rating" class="rating-filter-radio" value="4.5" />
+                  <span>4.5★ & Above</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="shop-rating" class="rating-filter-radio" value="4.0" />
+                  <span>4.0★ & Above</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="shop-rating" class="rating-filter-radio" value="0" checked />
+                  <span>All Ratings</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Product Grid Area -->
+        <div class="shop-main">
+          <!-- Controls Top Bar -->
+          <div class="shop-controls-top">
+            <div class="shop-search-bar">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="shop-search-input" placeholder="Search sports, balls, bats, gear..." />
+            </div>
+
+            <div class="shop-sort-controls">
+              <span class="sort-label">Sort By:</span>
+              <select class="sort-select" id="shop-sort-select">
+                <option value="featured">Featured & Bestselling</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="newest">New Arrivals</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <div id="shop-results-count" style="font-size: 0.88rem; color: var(--text-muted); font-weight: 600;">
+              Showing all products
+            </div>
+            <button class="btn btn-outline btn-sm filter-mobile-toggle-btn" id="mobile-filter-toggle" style="display: none;">
+              Filters
+            </button>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-grid" id="shop-products-grid">
+            <!-- Populated dynamically by app.js -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: PRODUCT DETAILS
+       ========================================================================== -->
+  <main id="view-product-detail" class="view-section">
+    <div class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <!-- Breadcrumb -->
+      <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 24px;">
+        <a data-route="home" style="color:var(--text-muted); cursor:pointer;">Home</a> &nbsp;/&nbsp;
+        <a data-route="shop" style="color:var(--text-muted); cursor:pointer;">Shop</a> &nbsp;/&nbsp;
+        <span id="detail-breadcrumb-cat" style="color:var(--text-muted);">Cricket</span> &nbsp;/&nbsp;
+        <span id="detail-breadcrumb-name" style="color:var(--accent-green); font-weight: 700;">Product Name</span>
+      </div>
+
+      <div class="product-detail-container">
+        <div class="product-detail-grid">
+          <!-- Gallery Col -->
+          <div class="gallery-wrapper">
+            <div class="gallery-main-frame">
+              <img id="detail-main-img" class="gallery-main-img" src="" alt="Product Detail Preview" />
+            </div>
+            <div class="gallery-thumbnails" id="detail-gallery-thumbs">
+              <!-- Populated by app.js -->
+            </div>
+          </div>
+
+          <!-- Info Col -->
+          <div class="product-info-col">
+            <span class="detail-brand-badge" id="detail-brand">SPORTIFY PRO</span>
+            <h1 class="detail-title" id="detail-title">TitanStroke Grade 1+ English Willow Bat</h1>
+            
+            <div class="detail-rating-row">
+              <div style="color: var(--accent-yellow); font-size: 1.1rem;" id="detail-rating-stars">★★★★★</div>
+              <span style="font-size: 0.88rem; color: var(--text-muted);" id="detail-rating-count">4.9 (142 verified reviews)</span>
+            </div>
+
+            <div class="detail-price-box">
+              <span class="detail-current-price" id="detail-price">₹18,499</span>
+              <span class="detail-original-price" id="detail-orig-price">₹28,999</span>
+              <span class="detail-discount-tag" id="detail-discount">36% OFF</span>
+            </div>
+
+            <p style="color: #cbd5e1; font-size: 0.95rem; margin-bottom: 24px; line-height: 1.6;" id="detail-description-text">
+              Hand-selected Grade 1+ English Willow cleft featuring a massive 40mm edge profile and lightning pickup.
+            </p>
+
+            <!-- Size Selector -->
+            <div class="variant-selector-group">
+              <div class="variant-label">
+                <span>Select Size / Spec</span>
+                <span style="color:var(--accent-green); font-size: 0.75rem;">Size Guide</span>
+              </div>
+              <div class="variant-options-row" id="detail-size-options">
+                <!-- Size buttons -->
+              </div>
+            </div>
+
+            <!-- Color / Variant Selector -->
+            <div class="variant-selector-group">
+              <div class="variant-label">
+                <span>Grip / Color Variant</span>
+              </div>
+              <div class="variant-options-row" id="detail-color-options">
+                <!-- Color buttons -->
+              </div>
+            </div>
+
+            <!-- Quantity & Actions -->
+            <div class="detail-cta-row">
+              <div class="qty-stepper">
+                <button class="qty-btn" id="detail-qty-minus">-</button>
+                <input type="number" class="qty-input" id="detail-qty-input" value="1" min="1" max="20" />
+                <button class="qty-btn" id="detail-qty-plus">+</button>
+              </div>
+
+              <div class="detail-actions-buttons">
+                <button class="btn btn-primary" id="detail-add-cart-btn" style="flex:1;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-2z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  Add to Cart
+                </button>
+                <button class="btn btn-orange" id="detail-buy-now-btn" style="flex:1;">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+
+            <!-- Wishlist Button -->
+            <div style="margin-bottom: 24px;">
+              <button class="btn btn-outline btn-sm" id="detail-wishlist-btn" style="width: 100%;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                Add to Wishlist
+              </button>
+            </div>
+
+            <!-- Trust Meta -->
+            <div style="padding: 16px; background: var(--bg-primary); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); display: flex; flex-direction: column; gap: 8px; font-size: 0.82rem; color: var(--text-muted);">
+              <div>⚡ <strong>Next-Day Dispatch:</strong> Order within 4 hours for priority dispatch.</div>
+              <div>🛡️ <strong>1-Year Warranty:</strong> Full replacement warranty against manufacturing defects.</div>
+              <div>🔄 <strong>30-Day Hassle-Free Returns:</strong> Instant pickup from your doorstep.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Tabs: Specs & Reviews -->
+        <div class="product-tabs-nav">
+          <button class="tab-btn active" data-tab-target="tab-specs">Technical Specifications</button>
+          <button class="tab-btn" data-tab-target="tab-reviews">Customer Reviews</button>
+        </div>
+
+        <div class="tab-content-panel active" id="tab-specs">
+          <table class="specs-table">
+            <tbody id="detail-specs-tbody">
+              <!-- Populated by app.js -->
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tab-content-panel" id="tab-reviews">
+          <!-- Write Review Section -->
+          <div style="background: var(--bg-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 24px; margin-bottom: 30px;">
+            <h4 style="font-family: var(--font-headline); font-size: 1.1rem; color: #fff; margin-bottom: 12px;">Submit Athlete Review</h4>
+            <form id="detail-review-form" style="display: flex; flex-direction: column; gap: 14px;">
+              <input type="text" id="review-name-input" class="form-input" placeholder="Your Full Name (e.g., Rohit S.)" required />
+              <textarea id="review-comment-input" class="form-textarea" rows="3" placeholder="Share your experience on match day, grip, weight distribution, and performance..." required></textarea>
+              <button type="submit" class="btn btn-primary btn-sm" style="align-self: flex-start;">Submit Review</button>
+            </form>
+          </div>
+
+          <div id="detail-reviews-list">
+            <!-- Populated by app.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div class="section-header" style="margin-top: 60px;">
+        <div>
+          <span class="section-tag">Complete The Kit</span>
+          <h2 class="section-title">RELATED PRO GEAR</h2>
+        </div>
+      </div>
+      <div class="products-grid" id="detail-related-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: FULL CART PAGE
+       ========================================================================== -->
+  <main id="view-cart" class="view-section">
+    <div class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <h1 class="section-title" style="margin-bottom: 30px;">YOUR SHOPPING CART</h1>
+
+      <div class="full-cart-layout">
+        <!-- Cart Table Items -->
+        <div class="cart-table-card" id="full-cart-items-container">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Order Summary Card -->
+        <div class="cart-table-card" style="background: var(--bg-surface-elevated);">
+          <h3 style="font-family: var(--font-headline); font-size: 1.25rem; font-weight: 800; color: #fff; margin-bottom: 20px;">Order Summary</h3>
+          
+          <div class="coupon-input-group">
+            <input type="text" id="full-coupon-input" placeholder="Coupon Code (e.g. SPORTIFY45)" />
+            <button class="btn btn-outline-orange btn-sm" id="full-apply-coupon-btn">Apply</button>
+          </div>
+
+          <div class="calc-breakdown-row">
+            <span>Subtotal</span>
+            <span class="val" id="full-calc-subtotal">₹0</span>
+          </div>
+          <div class="calc-breakdown-row">
+            <span>Coupon Discount</span>
+            <span class="val" id="full-calc-discount" style="color:var(--accent-orange);">-₹0</span>
+          </div>
+          <div class="calc-breakdown-row">
+            <span>Delivery Charges</span>
+            <span class="val" id="full-calc-shipping" style="color:var(--accent-green);">FREE</span>
+          </div>
+          <div class="calc-breakdown-row total">
+            <span>Total Amount</span>
+            <span class="val" id="full-calc-total">₹0</span>
+          </div>
+
+          <div style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <button class="btn btn-primary btn-block" onclick="SportifyRouter.navigate('checkout')">
+              Proceed to Checkout &rarr;
+            </button>
+            <button class="btn btn-outline btn-block" onclick="SportifyRouter.navigate('shop')">
+              Continue Shopping
+            </button>
+          </div>
+
+          <div style="margin-top: 20px; text-align: center; font-size: 0.78rem; color: var(--text-dim);">
+            🔒 256-Bit SSL Encrypted Checkout • 30-Day Money Back Guarantee
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: CHECKOUT PAGE
+       ========================================================================== -->
+  <main id="view-checkout" class="view-section">
+    <div class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <h1 class="section-title" style="margin-bottom: 30px;">EXPRESS PRO CHECKOUT</h1>
+
+      <form id="checkout-form" class="checkout-layout">
+        <!-- Left: Details and Delivery Forms -->
+        <div>
+          <!-- Step 1: Customer Contact -->
+          <div class="checkout-card">
+            <div class="checkout-step-title">
+              <span class="step-num">1</span>
+              <span>Customer Information</span>
+            </div>
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label" for="co-name">Full Name *</label>
+                <input type="text" id="co-name" class="form-input" placeholder="Virat Kohli" required />
+                <span class="input-error-msg">Please enter your full name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="co-email">Email Address *</label>
+                <input type="email" id="co-email" class="form-input" placeholder="athlete@sportify.in" required />
+                <span class="input-error-msg">Please enter a valid email</span>
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="co-phone">Phone Number (10 Digits) *</label>
+                <input type="tel" id="co-phone" class="form-input" placeholder="9876543210" maxlength="10" required />
+                <span class="input-error-msg">Please enter a valid 10-digit Indian phone number</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Shipping Address -->
+          <div class="checkout-card">
+            <div class="checkout-step-title">
+              <span class="step-num">2</span>
+              <span>Delivery Address</span>
+            </div>
+            <div class="form-grid">
+              <div class="form-group full">
+                <label class="form-label" for="co-address">Street Address / Flat / Floor *</label>
+                <input type="text" id="co-address" class="form-input" placeholder="Flat 402, Champion Heights, Indiranagar" required />
+                <span class="input-error-msg">Please enter delivery address</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="co-city">City / Town *</label>
+                <input type="text" id="co-city" class="form-input" placeholder="Bengaluru" required />
+                <span class="input-error-msg">Please enter city</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="co-state">State *</label>
+                <select id="co-state" class="form-select">
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Delhi">Delhi NCR</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Kerala">Kerala</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label class="form-label" for="co-pincode">PIN Code (6 Digits) *</label>
+                <input type="text" id="co-pincode" class="form-input" placeholder="560038" maxlength="6" required />
+                <span class="input-error-msg">Please enter a valid 6-digit postal PIN code</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Payment Method -->
+          <div class="checkout-card">
+            <div class="checkout-step-title">
+              <span class="step-num">3</span>
+              <span>Payment Method</span>
+            </div>
+
+            <div class="payment-methods-grid">
+              <label class="payment-tab-option active" data-payment-target="pay-box-upi">
+                <input type="radio" name="payment-method" value="UPI" checked />
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Instant UPI</div>
+                  <div style="font-size: 0.75rem; color: var(--text-dim);">Google Pay, PhonePe, Paytm</div>
+                </div>
+              </label>
+
+              <label class="payment-tab-option" data-payment-target="pay-box-card">
+                <input type="radio" name="payment-method" value="Card" />
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Credit / Debit Card</div>
+                  <div style="font-size: 0.75rem; color: var(--text-dim);">Visa, MasterCard, RuPay</div>
+                </div>
+              </label>
+
+              <label class="payment-tab-option" data-payment-target="pay-box-netbanking">
+                <input type="radio" name="payment-method" value="NetBanking" />
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Net Banking</div>
+                  <div style="font-size: 0.75rem; color: var(--text-dim);">All major Indian banks</div>
+                </div>
+              </label>
+
+              <label class="payment-tab-option" data-payment-target="pay-box-cod">
+                <input type="radio" name="payment-method" value="COD" />
+                <div>
+                  <div style="font-weight: 700; color: #fff;">Cash On Delivery</div>
+                  <div style="font-size: 0.75rem; color: var(--text-dim);">Pay cash or UPI at doorstep</div>
+                </div>
+              </label>
+            </div>
+
+            <!-- UPI Details -->
+            <div class="payment-details-box" id="pay-box-upi">
+              <div style="margin-bottom: 12px; font-size: 0.88rem; color: var(--text-muted);">
+                Enter your VPA / UPI ID or scan QR code after order placement:
+              </div>
+              <input type="text" class="form-input" placeholder="athlete@okaxis / 9876543210@paytm" />
+            </div>
+
+            <!-- Card Details -->
+            <div class="payment-details-box" id="pay-box-card" style="display:none;">
+              <div class="form-grid">
+                <div class="form-group full">
+                  <label class="form-label">Card Number</label>
+                  <input type="text" class="form-input" placeholder="4111 2222 3333 4444" maxlength="19" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Expiry MM/YY</label>
+                  <input type="text" class="form-input" placeholder="08/28" maxlength="5" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">CVV</label>
+                  <input type="password" class="form-input" placeholder="123" maxlength="3" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Netbanking Details -->
+            <div class="payment-details-box" id="pay-box-netbanking" style="display:none;">
+              <select class="form-select">
+                <option>HDFC Bank</option>
+                <option>State Bank of India (SBI)</option>
+                <option>ICICI Bank</option>
+                <option>Axis Bank</option>
+                <option>Kotak Mahindra Bank</option>
+              </select>
+            </div>
+
+            <!-- COD Details -->
+            <div class="payment-details-box" id="pay-box-cod" style="display:none;">
+              <div style="font-size: 0.88rem; color: var(--text-muted);">
+                Cash on delivery is available for all serviceable PIN codes. You can pay via cash or UPI scan at delivery.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Order Summary Card -->
+        <div class="checkout-card" style="background: var(--bg-surface-elevated); position: sticky; top: 100px;">
+          <h3 style="font-family: var(--font-headline); font-size: 1.25rem; font-weight: 800; color: #fff; margin-bottom: 20px;">Review Order</h3>
+
+          <div id="checkout-summary-items">
+            <!-- Populated by app.js -->
+          </div>
+
+          <div class="calc-breakdown-row">
+            <span>Subtotal</span>
+            <span class="val" id="checkout-calc-subtotal">₹0</span>
+          </div>
+          <div class="calc-breakdown-row">
+            <span>Coupon Discount</span>
+            <span class="val" id="checkout-calc-discount" style="color:var(--accent-orange);">-₹0</span>
+          </div>
+          <div class="calc-breakdown-row">
+            <span>Delivery</span>
+            <span class="val" id="checkout-calc-shipping" style="color:var(--accent-green);">FREE</span>
+          </div>
+          <div class="calc-breakdown-row total">
+            <span>Total Payable</span>
+            <span class="val" id="checkout-calc-total">₹0</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 24px;">
+            Place Order Now &rarr;
+          </button>
+
+          <div style="margin-top: 18px; text-align: center; font-size: 0.78rem; color: var(--text-dim);">
+            By placing your order, you agree to Sportify's Terms of Sale and Match Warranty Policy.
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: ABOUT SPORTIFY
+       ========================================================================== -->
+  <main id="view-about" class="view-section">
+    <div class="container" style="padding-top: 50px; padding-bottom: 80px;">
+      <div class="story-hero-banner">
+        <span class="section-tag">Our Manifesto</span>
+        <h1 class="hero-headline" style="font-size: clamp(2.4rem, 5vw, 4.2rem); margin: 16px 0;">
+          “WE BELIEVE EVERY ATHLETE<br />
+          <span class="highlight-green">DESERVES BETTER EQUIPMENT.”</span>
+        </h1>
+        <p style="color: #cbd5e1; font-size: 1.2rem; max-width: 780px; margin: 0 auto; line-height: 1.7;">
+          Born out of frustration with overpriced imports and fragile local replicas, SPORTIFY was founded in 2020 by former national athletes and material engineers to engineer world-class sports equipment accessible to every aspiring champion.
+        </p>
+      </div>
+
+      <div class="about-values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 10px;">Aero-Material Science</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            From high-modulus Japanese Toray carbon weaves to English willow aged under controlled humidity, our materials exceed international federation standards.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polygon points="12 6 12 12 16 14"></polygon>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 10px;">Championship Rigor</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Every single batch of footballs, cricket balls, and badminton frames undergoes 10,000+ impact cycles in our Bangalore Lab before receiving tournament certification.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 10px;">Grassroots Athlete Program</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            We sponsor over 500+ emerging state & national talents across schools and district academies with complimentary seasonal kits and nutritional support.
+          </p>
+        </div>
+      </div>
+
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 50px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center;">
+        <div>
+          <span class="section-tag">Innovation Lab</span>
+          <h2 class="section-title" style="margin: 12px 0 18px;">ENGINEERED IN BENGALURU, TESTED GLOBALLY</h2>
+          <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.7; margin-bottom: 24px;">
+            Our R&D center partners with premier biomechanists to optimize kinetic energy transfer in bats, aerodynamic laminar flow on football panels, and non-slip rubber grip compound in shoes.
+          </p>
+          <a class="btn btn-primary" data-route="shop">Explore Our Innovations &rarr;</a>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623266ddc0?auto=format&fit=crop&w=800&q=80" alt="Sportify Lab" style="border-radius: var(--radius-md); width: 100%; border: 1px solid var(--border-subtle);" />
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: CONTACT SPORTIFY
+       ========================================================================== -->
+  <main id="view-contact" class="view-section">
+    <div class="container" style="padding-top: 50px; padding-bottom: 80px;">
+      <div class="section-header" style="text-align: center; max-width: 680px; margin: 0 auto 50px;">
+        <span class="section-tag">Athlete Support</span>
+        <h1 class="section-title">WE’RE HERE FOR YOUR GAME</h1>
+        <p class="section-desc">Have a question regarding sizing, bat knocking, bulk academy orders, or returns? Our team of sports specialists is on standby.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; margin-bottom: 60px;">
+        <!-- Contact Information Cards -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="trust-badge-card">
+            <div class="trust-badge-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 style="color: #fff; font-size: 1rem;">Phone Support</h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem;">1800-SPORTIFY (Toll Free) / +91 80 4920 1100</p>
+              <span style="font-size: 0.75rem; color: var(--accent-green); font-weight: 700;">Mon - Sat: 9:00 AM - 9:00 PM IST</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-card">
+            <div class="trust-badge-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4 style="color: #fff; font-size: 1rem;">Direct Email</h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem;">support@sportify.in / pro-orders@sportify.in</p>
+              <span style="font-size: 0.75rem; color: var(--accent-green); font-weight: 700;">Average reply within 2 hours</span>
+            </div>
+          </div>
+
+          <div class="trust-badge-card">
+            <div class="trust-badge-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4 style="color: #fff; font-size: 1rem;">Flagship Experience Center</h4>
+              <p style="color: var(--text-muted); font-size: 0.88rem;">Sportify Arena Hub, 100 Ft Road, Indiranagar, Bengaluru, KA 560038</p>
+              <span style="font-size: 0.75rem; color: var(--accent-orange); font-weight: 700;">Bat knocking & stringing available on site</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="checkout-card">
+          <h3 style="font-family: var(--font-headline); font-size: 1.3rem; color: #fff; margin-bottom: 20px;">Send Us A Direct Message</h3>
+          <form id="contact-form" style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="form-grid">
+              <div class="form-group">
+                <label class="form-label">Athlete Name</label>
+                <input type="text" class="form-input" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-input" placeholder="Your Mobile Number" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="name@domain.com" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject / Inquiry Type</label>
+              <select class="form-select">
+                <option>Product Sizing & Advice</option>
+                <option>Order Tracking & Delivery</option>
+                <option>Warranty Claim or Replacement</option>
+                <option>Bulk Academy & Club Orders</option>
+                <option>Athlete Sponsorship Inquiries</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Your Message</label>
+              <textarea class="form-textarea" rows="4" placeholder="How can our equipment specialists help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message &rarr;</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div style="max-width: 860px; margin: 40px auto 0;">
+        <div class="section-header" style="text-align: center; margin-bottom: 30px;">
+          <span class="section-tag">Frequently Asked</span>
+          <h2 class="section-title">COMMON QUESTIONS</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item active">
+            <div class="faq-question">
+              <span>Are all cricket bats pre-knocked before delivery?</span>
+              <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              Yes! All SPORTIFY TitanStroke English Willow bats undergo a 10,000-cycle computer-controlled pneumatic knocking machine process and edge conditioning prior to dispatch. We recommend 20 minutes of light throwdown knocking with an old leather ball before full match play.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>How long does express delivery take across India?</span>
+              <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              Metro cities (Bengaluru, Mumbai, Delhi NCR, Chennai, Hyderabad, Kolkata) receive delivery within 24 to 48 hours. Tier-2 and Tier-3 cities receive delivery within 3 to 4 business days. Real-time SMS and WhatsApp tracking links are dispatched immediately after packaging.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is the return and replacement policy?</span>
+              <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              We offer a no-questions-asked 30-day return policy for unused gear in original packaging. If you experience an unexpected handle defect or frame fracture within our 1-year match warranty, we provide an immediate 1-to-1 replacement.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Can we order customized club jerseys and team kit bags?</span>
+              <span class="faq-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+              Absolutely! Our Pro Academy division specializes in customized sublimation jerseys, personalized bats with engraved player names, and team kit bags with your club crest. Select 'Bulk Academy Orders' in the contact form or call 1800-SPORTIFY.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       VIEW: WISHLIST
+       ========================================================================== -->
+  <main id="view-wishlist" class="view-section">
+    <div class="container" style="padding-top: 40px; padding-bottom: 80px;">
+      <h1 class="section-title" style="margin-bottom: 30px;">SAVED ATHLETE WISHLIST</h1>
+      <div class="products-grid" id="wishlist-products-grid">
+        <!-- Populated by app.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       SLIDE-OUT CART DRAWER
+       ========================================================================== -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-drawer-header">
+      <h3>Your Equipment Bag</h3>
+      <button class="cart-close-btn" id="cart-drawer-close" aria-label="Close Shopping Bag">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body" id="cart-drawer-items">
+      <!-- Populated dynamically -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="coupon-input-group">
+        <input type="text" id="drawer-coupon-input" placeholder="Promo code (SPORTIFY45)" />
+        <button class="btn btn-outline-orange btn-sm" id="drawer-apply-coupon-btn">Apply</button>
+      </div>
+
+      <div class="calc-breakdown-row">
+        <span>Subtotal</span>
+        <span class="val" id="drawer-calc-subtotal">₹0</span>
+      </div>
+      <div class="calc-breakdown-row">
+        <span>Coupon Discount</span>
+        <span class="val" id="drawer-calc-discount" style="color:var(--accent-orange);">-₹0</span>
+      </div>
+      <div class="calc-breakdown-row">
+        <span>Delivery</span>
+        <span class="val" id="drawer-calc-shipping" style="color:var(--accent-green);">FREE</span>
+      </div>
+      <div class="calc-breakdown-row total">
+        <span>Total</span>
+        <span class="val" id="drawer-calc-total">₹0</span>
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-top: 16px;">
+        <button class="btn btn-primary" style="flex:1;" onclick="closeCartDrawer(); SportifyRouter.navigate('checkout');">
+          Checkout Now
+        </button>
+        <button class="btn btn-outline" style="flex:1;" onclick="closeCartDrawer(); SportifyRouter.navigate('cart');">
+          View Cart
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       GLOBAL SEARCH MODAL
+       ========================================================================== -->
+  <div class="search-modal" id="search-modal">
+    <div class="search-modal-container">
+      <div class="search-input-header">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-modal-input" placeholder="Search bats, balls, jerseys, rackets, shoes..." />
+        <button class="cart-close-btn" id="search-modal-close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="search-results-list" id="search-modal-results">
+        <!-- Live search matches -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ORDER CONFIRMATION SUCCESS MODAL
+       ========================================================================== -->
+  <div class="order-success-modal" id="order-success-modal">
+    <div class="order-success-card">
+      <div class="success-icon-check">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h2 style="font-family: var(--font-headline); font-size: 2rem; color: #fff; margin-bottom: 8px;">ORDER CONFIRMED!</h2>
+      <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+        Thank you for equipping with SPORTIFY. Your champion gear is now being packed in our temperature-controlled facility.
+      </p>
+
+      <div style="background: var(--bg-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px; margin-bottom: 24px; text-align: left;">
+        <div style="display:flex; justify-content:space-between; margin-bottom: 8px;">
+          <span style="color:var(--text-dim); font-size: 0.85rem;">Order Reference:</span>
+          <strong style="color:var(--accent-green); font-family: var(--font-headline);" id="success-order-id">SPT-98214-721</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between; margin-bottom: 8px;">
+          <span style="color:var(--text-dim); font-size: 0.85rem;">Total Amount Paid:</span>
+          <strong style="color:#fff;" id="success-order-total">₹0</strong>
+        </div>
+        <div style="display:flex; justify-content:space-between;">
+          <span style="color:var(--text-dim); font-size: 0.85rem;">Estimated Delivery:</span>
+          <strong style="color:#fff;">Within 48-72 Hours</strong>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block" id="order-success-close-btn">
+        Continue Shopping
+      </button>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOAST CONTAINER
+       ========================================================================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="brand-logo" data-route="home">
+            <div class="logo-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="brand-name">SPORT<span>IFY</span></span>
+              <span class="brand-sub">CHAMPION GEAR</span>
+            </div>
+          </div>
+          <p>
+            International grade sports gear engineered for athletes who refuse to compromise. Built for champions, backed by science.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Twitter X">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Sports Categories -->
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <ul class="footer-links">
+            <li><a data-route="shop" data-category="cricket">Cricket Gear</a></li>
+            <li><a data-route="shop" data-category="football">Football Match Kits</a></li>
+            <li><a data-route="shop" data-category="badminton">Badminton Rackets</a></li>
+            <li><a data-route="shop" data-category="tennis">Tennis Pro Tour</a></li>
+            <li><a data-route="shop" data-category="basketball">Basketball Equipment</a></li>
+            <li><a data-route="shop" data-category="fitness">Gym & Resistance Training</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a data-route="home">Home Arena</a></li>
+            <li><a data-route="shop">All Products</a></li>
+            <li><a data-route="about">Our Manifesto</a></li>
+            <li><a data-route="contact">Contact & FAQ</a></li>
+            <li><a data-route="wishlist">Saved Wishlist</a></li>
+            <li><a data-route="cart">My Bag</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Trust & Policies -->
+        <div class="footer-col">
+          <h4>Athlete Assurance</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-route="about">Federation Standards</a></li>
+            <li><a href="#about" data-route="about">1-Year Match Warranty</a></li>
+            <li><a href="#contact" data-route="contact">30-Day Easy Returns</a></li>
+            <li><a href="#contact" data-route="contact">Bat Knocking Guidance</a></li>
+            <li><a href="#contact" data-route="contact">Academy Bulk Pricing</a></li>
+            <li><a href="#contact" data-route="contact">Track Consignment</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Contact Info -->
+        <div class="footer-col">
+          <h4>Pro Hub</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Sportify Arena, 100 Ft Rd, Indiranagar, Bengaluru 560038</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span>1800-SPORTIFY / +91 80 4920 1100</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>support@sportify.in</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 SPORTIFY Technologies Inc. All rights reserved. Built for champions across India and worldwide.
+        </div>
+        <div class="payment-badges">
+          <span class="pay-badge">⚡ Instant UPI</span>
+          <span class="pay-badge">VISA</span>
+          <span class="pay-badge">Mastercard</span>
+          <span class="pay-badge">RuPay</span>
+          <span class="pay-badge">Net Banking</span>
+          <span class="pay-badge">Cash on Delivery</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
